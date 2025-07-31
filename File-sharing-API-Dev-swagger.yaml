@@ -1,0 +1,24 @@
+---
+swagger: "2.0"
+info:
+  description: "API gateway to request pre-signed url"
+  version: "2025-07-31T18:00:43Z"
+  title: "File-sharing-API"
+host: "duyojbswh4.execute-api.us-west-2.amazonaws.com"
+basePath: "/Dev"
+schemes:
+- "https"
+paths:
+  /upload:
+    post:
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
